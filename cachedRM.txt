@@ -3,3 +3,10 @@ git reset --hard HEAD^
 git ls-files --cached  #查看暂存区文件
 git rm -r --cached .   #删除暂存区文件
 git add .
+#此时提交必有冲突，先pull
+git pull --rebase
+#解决冲突...
+git add .
+git pull --rebase
+git push
+
