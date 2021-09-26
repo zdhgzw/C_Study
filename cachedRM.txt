@@ -1,0 +1,5 @@
+push后，发现有的文件需要修改
+git reset --hard HEAD^
+git ls-files --cached  #查看暂存区文件
+git rm -r --cached .   #删除暂存区文件
+git add .
